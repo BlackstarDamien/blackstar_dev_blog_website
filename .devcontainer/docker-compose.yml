@@ -8,12 +8,14 @@ services:
     depends_on:
       - blackstar_dev_blog
     volumes:
-      - ../:/blackstar_blog_website
+      - ../:/blackstar_dev_blog_website
     ports:
       - "4000:3000"
 
   blackstar_dev_blog:
     image: ghcr.io/blackstardamien/blackstar_dev_blog:master
+    environment:
+      - DB_PORT=54322
     depends_on:
       - postgres
 
@@ -24,4 +26,4 @@ services:
       - POSTGRES_PASSWORD=test123
       - POSTGRES_DB=blog_db
     ports:
-      - "54321:5432"
+      - "54322:5432"
