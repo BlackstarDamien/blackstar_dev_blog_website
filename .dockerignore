@@ -3,6 +3,8 @@
 
 # Allow project directories
 !/.devcontainer/**
+!/public/**
+!/src/**
 
 # Allow package.json
 !package.json
