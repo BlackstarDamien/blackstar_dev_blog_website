@@ -1,0 +1,8 @@
+# Ignore everything
+**
+
+# Allow project directories
+!/.devcontainer/**
+
+# Allow package.json
+!package.json
