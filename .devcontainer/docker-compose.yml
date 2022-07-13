@@ -9,6 +9,7 @@ services:
       - blackstar_dev_blog
     volumes:
       - ../:/blackstar_dev_blog_website
+      - /blackstar_dev_blog_website/node_modules
     ports:
       - "4000:3000"
 
