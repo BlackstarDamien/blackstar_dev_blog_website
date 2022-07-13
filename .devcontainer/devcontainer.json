@@ -1,0 +1,30 @@
+{
+    "name": "blackstar-blog-website",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "website",
+    "workspaceFolder": "/blackstar_dev_blog_website",
+    "settings": {
+        "eslint.enable": true,
+        "eslint.packageManager": "npm",
+        "eslint.run": "onType",
+        "eslint.format.enable": true,
+        "editor.formatOnSave": true,
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "terminal.integrated.profiles.linux": {
+            "bash": {
+                "path": "/bin/bash"
+            }
+        },
+        "git.autofetch": true,
+        "git.path": "/usr/bin/git",
+        "files.trimTrailingWhitespace": true,
+        "yaml.validate": true
+    },
+    "extensions": [
+        "dbaeumer.vscode-eslint",
+        "dsznajder.es7-react-js-snippets",
+        "vscode-icons-team.vscode-icons",
+        "redhat.vscode-yaml",
+        "eamodio.gitlens"
+    ]
+}
