@@ -12,4 +12,4 @@ COPY . /blackstar_dev_blog_website/
 
 WORKDIR /blackstar_dev_blog_website
 
-ENTRYPOINT echo hello && sleep infinity
+CMD ["npm", "start"]
