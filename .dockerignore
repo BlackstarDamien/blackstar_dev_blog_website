@@ -1,0 +1,15 @@
+# Ignore everything
+**
+
+# Allow project directories
+!/.devcontainer/**
+!/public/**
+!/src/**
+
+# Allow package.json
+!package.json
+!package-lock.json
+
+# Allow config files
+!.babelrc
+!webpack.config.js

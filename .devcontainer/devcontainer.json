@@ -4,6 +4,8 @@
     "service": "website",
     "workspaceFolder": "/blackstar_dev_blog_website",
     "settings": {
+        "emmet.triggerExpansionOnTab": true,
+        "emmet.showSuggestionsAsSnippets": true,
         "eslint.enable": true,
         "eslint.packageManager": "npm",
         "eslint.run": "onType",
