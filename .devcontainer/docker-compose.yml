@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+  website:
+    build:
+      context: ..
+      dockerfile: Dockerfile
+    depends_on:
+      - blackstar_dev_blog
+    volumes:
+      - ../:/blackstar_dev_blog_website
+    ports:
+      - "4000:3000"
+
+  blackstar_dev_blog:
+    image: ghcr.io/blackstardamien/blackstar_dev_blog:master
+    environment:
+      - DB_PORT=54322
+    depends_on:
+      - postgres
+
+  postgres:
+    image: postgres:9.6
+    environment:
+      - POSTGRES_USER=blog_user
+      - POSTGRES_PASSWORD=test123
+      - POSTGRES_DB=blog_db
+    ports:
+      - "54322:5432"
