@@ -1,0 +1,23 @@
+{
+  "name": "blackstar_dev_blog_website",
+  "version": "1.0.0",
+  "description": "Personal blog's website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlackstarDamien/blackstar_dev_blog_website.git"
+  },
+  "keywords": [
+    "blog",
+    "react"
+  ],
+  "author": "Damian Zylka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BlackstarDamien/blackstar_dev_blog_website/issues"
+  },
+  "homepage": "https://github.com/BlackstarDamien/blackstar_dev_blog_website#readme"
+}
