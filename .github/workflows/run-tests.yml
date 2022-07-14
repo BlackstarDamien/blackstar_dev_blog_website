@@ -1,0 +1,36 @@
+name: Running tests
+
+on:
+  pull_request:
+    branches:
+      - "main"
+
+jobs:
+  testing:
+    runs-on: ubuntu-latest
+    container: node
+
+    services:
+      blackstar_dev_blog:
+        image: ghcr.io/blackstardamien/blackstar_dev_blog:master
+        env:
+          DB_PORT: 54322
+        ports:
+          - 5005:80
+
+      postgres:
+        image: postgres:9.6
+        env:
+          POSTGRES_USER: blog_user
+          POSTGRES_PASSWORD: test123
+          POSTGRES_DB: blog_db
+        ports:
+          - 54321:5432
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install dependencies
+      - run: npm install
+
+      # Place reserved for tests. Will be added later
